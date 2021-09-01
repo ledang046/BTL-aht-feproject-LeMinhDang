@@ -1,3 +1,99 @@
+@font-face {
+  font-family: FiraSans;
+  src: url('../fonts/FiraSans-Regular.ttf');
+}
+@font-face {
+  font-family: Comorant;
+  src: url('../fonts/CormorantGaramond-SemiBoldItalic.ttf');
+}
+@font-face {
+  font-family: ComorantSemi;
+  src: url('../fonts/CormorantGaramond-SemiBold.ttf');
+}
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: ConmorantBold;
+  src: url('../fonts/CormorantGaramond-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1770px;
+  padding: 0 25px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -25px;
+  margin-left: -25px;
+}
+.col {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-fluid {
+  position: relative;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.cover {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  background-color: #333;
+  opacity: 0.9;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+.cover.active {
+  left: 0;
+}
 footer {
   background-color: #333;
 }
@@ -123,7 +219,7 @@ footer .footer-bottom .social .item i {
   z-index: 10;
 }
 .header .header-top .container-fluid {
-  padding: 27px 25px;
+  padding: 29px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,8 +249,8 @@ footer .footer-bottom .social .item i {
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -5px;
+  right: -12px;
 }
 .header .header-top .container-fluid .button .bar {
   margin-right: 8px;
@@ -287,7 +383,7 @@ footer .footer-bottom .social .item i {
   -ms-transform: translateY(-46%);
 }
 .header .slider .list-content .social-list .item {
-  font-family: 'Comorant';
+  font-family: 'ComorantSemi';
   font-weight: 500;
   font-size: 24px;
   color: #eae6d3;
@@ -563,7 +659,7 @@ footer .footer-bottom .social .item i {
     font-size: 13px;
   }
   .page-main .main-content .feature-products .container .row .col {
-    width: 33.3333%;
+    width: 25%;
   }
   .page-main .main-content .blog .container .row .col .background .content {
     padding: 0 20px;
@@ -849,96 +945,6 @@ footer .footer-bottom .social .item i {
     padding-right: 15px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-ul,
-ol {
-  list-style-type: none;
-}
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-.container-fluid {
-  margin: 0 auto;
-  max-width: 1770px;
-  padding: 0 25px;
-}
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 15px;
-}
-.row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.row-fluid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -25px;
-  margin-left: -25px;
-}
-.col {
-  position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.col-fluid {
-  position: relative;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-.cover {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  right: 0;
-  bottom: 0;
-  z-index: 11;
-  background-color: #333;
-  opacity: 0.9;
-  transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-}
-.cover.active {
-  left: 0;
-}
-@font-face {
-  font-family: FiraSans;
-  src: url('../fonts/FiraSans-Regular.ttf');
-}
-@font-face {
-  font-family: Comorant;
-  src: url('../fonts/CormorantGaramond-SemiBoldItalic.ttf');
-}
-@font-face {
-  font-family: ComorantSemi;
-  src: url('../fonts/CormorantGaramond-SemiBold.ttf');
-}
-@font-face {
-  font-family: Lato;
-  src: url('../fonts/Lato-Bold.ttf');
-}
 .main-content .strength {
   height: 80px;
   border-bottom: 1px solid #efefef;
@@ -1075,7 +1081,7 @@ ol {
 .main-content .banner .container-fluid .row-fluid .col-fluid .detail.item-2 .percent {
   text-align: center;
   color: #333;
-  font-family: 'ConmorantSemi';
+  font-family: 'ConmorantBold';
   font-size: 100px;
   font-weight: 700;
   font-style: normal;
@@ -1086,7 +1092,7 @@ ol {
 .main-content .banner .container-fluid .row-fluid .col-fluid .detail.item-2 .content {
   text-align: center;
   color: #333;
-  font-family: 'ConmorantSemi';
+  font-family: 'ConmorantBold';
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -1125,7 +1131,7 @@ ol {
 .main-content .banner .container-fluid .row-fluid .col-fluid .detail.item-3 .content {
   text-align: center;
   color: #d6ba8d;
-  font-family: 'ConmorantSemi';
+  font-family: 'ConmorantBold';
   font-size: 72px;
   font-weight: 700;
   font-style: normal;
@@ -1149,7 +1155,7 @@ ol {
 .main-content .banner .container-fluid .row-fluid .col-fluid .detail.item-6 .title {
   padding-top: 1px;
   color: #333;
-  font-family: 'ConmorantSemi';
+  font-family: 'ConmorantBold';
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
